@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Send telegram message on push
-      uses: shch-QA/telegram-action@main
+      uses: appleboy/telegram-action@master
       with:
         to: ${{ secrets.TG_ID }}
         token: ${{ secrets.TG_TOKEN }}
